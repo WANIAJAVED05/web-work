@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+    <h1>Sign In</h1>
+    <form name="signinForm" onsubmit="return validateForm()">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required />
+            <span id="username-error" class="error-message"></span>
+        </div>
+        <div>
+            <label for="email">Email address:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email address" required />
+            <span id="email-error" class="error-message"></span>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+            <span id="password-error" class="error-message"></span>
+        </div>
+        <div>
+            <input type="submit" value="Sign In" />
+        </div>
+    </form>
+    <script src="practice2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Signup Form</h1>
+    <form name="signupForm" onsubmit="return validateForm()">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required />
+            <span id="username-error" class="error-message"></span>
+        </div>
+        <div>
+            <label for="email">Email address:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email address" required />
+            <span id="email-error" class="error-message"></span>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+            <span id="password-error" class="error-message"></span>
+        </div>
+        <div>
+            <input type="submit" value="Sign Up" />
+        </div>
+
+       <p>Already have an account? <a href="sign-in.html">Sing-in</a></p>
+       <p> <a href="get started">get started and start blog</a></p>
+    </form>
+    <script src="practice.js"></script>
+</body>
+
+</html>
